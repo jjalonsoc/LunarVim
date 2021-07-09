@@ -165,6 +165,7 @@ return require("packer").startup(function(use)
     disable = not O.plugin.ts_playground.active,
   }
 
+
   use {
     "lukas-reineke/indent-blankline.nvim",
     event = "BufRead",
@@ -179,7 +180,7 @@ return require("packer").startup(function(use)
       }
       vim.g.indent_blankline_buftype_exclude = { "terminal" }
 
-      vim.g.indent_blankline_show_trailing_blankline_indent = false
+      vim.g.indent_blankline_show_trailing_blankline_indent = true
       vim.g.indent_blankline_show_first_indent_level = true
     end,
     disable = not O.plugin.indent_line.active,
@@ -356,6 +357,39 @@ return require("packer").startup(function(use)
     "mfussenegger/nvim-ts-hint-textobject",
     event = "BufRead",
     disable = not O.plugin.ts_hintobjects.active,
+  }
+
+  -- My added plugins
+
+  -- hop instead of sneak
+  use {
+    "phaazon/hop.nvim",
+    event = "BufRead",
+    setup = function()
+      vim.cmd("nnoremap s :HopChar2<CR>")
+    end,
+  }
+
+  -- vimwiki to make notes
+  use {
+    "vimwiki/vimwiki",
+    event = "BufRead",
+    setup = function()
+      vim.cmd("set nocompatible")
+      vim.cmd("filetype plugin on")
+      vim.cmd("syntax on")
+      -- vim.cmd("nnoremap <Leader>vn :VimwikiNextLink")
+    end,
+  }
+
+  -- terraform
+  use {
+    "hashivim/vim-terraform",
+    event = "BufRead",
+    setup = function()
+      vim.cmd("let g:terraform_align=1")
+      vim.cmd("let g:terraform_fmt_on_save=1")
+    end,
   }
 
   for _, plugin in pairs(O.user_plugins) do

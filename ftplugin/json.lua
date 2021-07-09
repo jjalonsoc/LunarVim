@@ -1,17 +1,22 @@
 -- npm install -g vscode-json-languageserver
-require("lspconfig").jsonls.setup {
-  cmd = {
-    "node",
-    DATA_PATH .. "/lspinstall/json/vscode-json/json-language-features/server/dist/node/jsonServerMain.js",
-    "--stdio",
-  },
-  on_attach = require("lsp").common_on_attach,
+-- require("lspconfig").jsonls.setup {
+--   cmd = {
+--     "node",
+--     DATA_PATH .. "/lspinstall/json/vscode-json/json-language-features/server/dist/node/jsonServerMain.js",
+--     "--stdio",
+--   },
+--   on_attach = require("lsp").common_on_attach,
+-- 
+--   commands = {
+--     Format = {
+--       function()
+--         vim.lsp.buf.range_formatting({}, { 0, 0 }, { vim.fn.line("$"), 0 })
+--       end,
+--     },
+--   },
+-- }
+-- 
+-- -- vim.opt_local.expandtab = true
+-- -- vim.opt_local.shiftwidth = 4
+-- vim.cmd "setl expandtab tabstop=8 softtabstop=4 shiftwidth=4"
 
-  commands = {
-    Format = {
-      function()
-        vim.lsp.buf.range_formatting({}, { 0, 0 }, { vim.fn.line "$", 0 })
-      end,
-    },
-  },
-}

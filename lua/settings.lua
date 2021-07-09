@@ -10,6 +10,9 @@ cmd('let &titleold="' .. TERMINAL .. '"')
 cmd "set inccommand=split"
 cmd "set iskeyword+=-"
 cmd "set whichwrap+=<,>,[,],h,l"
+-- This allows for diagnostics to appear when cursor is on the line of the error
+-- cmd "autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics()"
+
 if O.transparent_window then
   cmd "au ColorScheme * hi Normal ctermbg=none guibg=none"
   cmd "au ColorScheme * hi SignColumn ctermbg=none guibg=none"
@@ -37,7 +40,7 @@ opt.pumheight = 10 -- pop up menu height
 opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
 opt.showtabline = 2 -- always show tabs
 opt.smartcase = O.smart_case -- smart case
-opt.smartindent = true -- make indenting smarter again
+opt.smartindent = false -- make indenting smarter again
 opt.splitbelow = true -- force all horizontal splits to go below current window
 opt.splitright = true -- force all vertical splits to go to the right of current window
 opt.swapfile = false -- creates a swapfile

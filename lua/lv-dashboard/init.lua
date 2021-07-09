@@ -9,22 +9,27 @@ M.config = function()
 
   vim.g.dashboard_custom_section = {
     a = {
+      description = { "  Vimwiki            " },
+      -- command = "<Plug>VimwikiIndex",
+      command = ":e ~/vimwiki/index.wiki",
+    },
+    g = {
       description = { "  Find File          " },
       command = "Telescope find_files",
     },
-    b = {
+    h = {
       description = { "  Recently Used Files" },
       command = "Telescope oldfiles",
     },
-    c = {
+    j = {
       description = { "  Load Last Session  " },
       command = "SessionLoad",
     },
-    d = {
+    l = {
       description = { "  Find Word          " },
       command = "Telescope live_grep",
     },
-    e = {
+    n = {
       description = { "  Settings           " },
       command = ":e " .. CONFIG_PATH .. "/lv-config.lua",
     },

@@ -1,4 +1,3 @@
-![LunarVim Demo](./utils/media/lunarvim_logo_dark.png)
 
 <div align="center"><p>
     <a href="https://github.com/ChristianChiarulli/LunarVim/releases/latest">
@@ -47,7 +46,7 @@ Example:
 -- general
 O.auto_complete = true
 O.relative_number = false
-O.colorscheme = 'spacegray'
+O.colorscheme = 'dracula'
 O.timeoutlen = 100
 O.leader_key = ' '
 
@@ -74,7 +73,7 @@ O.lang.tsserver.linter = nil
 O.lang.tsserver.autoformat = true
 
 -- json
-O.lang.json.autoformat = true
+O.lang.json.autoformat = false
 
 -- Additional Plugins
 -- O.user_plugins = {{"windwp/nvim-ts-autotag"}}

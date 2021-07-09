@@ -1,0 +1,72 @@
+.config/..
+│  asciinema
+│  autostart
+│  Boost Note
+│  Boostnote
+│  BraveSoftware
+│  cdh
+│  cef_user_data
+│  coc
+│  Code
+│  configstore
+│  dconf
+│  dell-linux-assistant
+│  dell-recovery
+│  dlv
+│  efm-langserver
+│  enchant
+│  eog
+│  evince
+│  evolution
+│  gedit
+│  gnome-control-center
+│  gnome-session
+│  goa-1.0
+│  google-chrome
+│  gtk-3.0
+│  gtk-4.0
+│  guake
+│  ibus
+│  JetBrains
+│  libreoffice
+│  menus
+│  Microsoft
+│  Microsoft Teams - Insiders
+│  Microsoft Teams - Preview
+│  nautilus
+│  nvim
+│ │  .github
+│ │  colors
+│ │  ftdetect
+│ │  ftplugin
+│ │  lua
+│ │  ◌ plugin
+│ │  utils
+│ │  .gitignore
+│ │  init.lua
+│ │  LICENSE
+│ │  ◌ lv-config.lua
+│ │  U NvimTree
+│ └  README.md
+│  nvimOld
+│  pulse
+│  ranger
+│  Slack
+│  teams
+│  teams-insiders
+│  terminator
+│  totem
+│  Unknown Organization
+│  update-notifier
+│  vlc
+│  yelp
+│  gnome-initial-setup-done
+│  mimeapps.list
+│ 謹 monitors.xml
+│  monitors.xml~
+│  NvimTree
+│  QtProject.conf
+│  starship.toml
+│  user-dirs.dirs
+│  user-dirs.locale
+└  zoomus.conf
